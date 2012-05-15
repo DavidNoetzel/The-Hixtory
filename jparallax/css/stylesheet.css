@@ -1,0 +1,49 @@
+div#title{
+font-family: times;
+color: #ffffff;
+position: relative;
+text-align:center;
+line-height: 0.1em;
+top:2.3em;
+z-index:1;
+}
+
+div#info{
+position:absolute;
+top:14em;
+left:70em;
+z-index:1;
+}
+
+p#small{
+
+  font-family: times;
+  font-size: 10pt;
+  letter-spacing:12px;
+  z-index:1;
+}
+
+
+p#big{
+font-family: times;
+font-size: 20pt;
+letter-spacing:12px;
+z-index:1;
+}
+
+
+p#info{
+
+  font-family: times;
+  color: #b3b3b3;
+  font-size: 10pt;
+  letter-spacing:1px;
+}
+
+
+body{font-family:times, serif;margin:0;line-height: 0.9em;}
+
+
+#my_ecard {position:relative; overflow:hidden; width:1440px; height:840px;top:0px;}
+
+
