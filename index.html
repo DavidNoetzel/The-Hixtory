@@ -3,7 +3,7 @@
 <head>
 <meta charset=utf-8 />
 
-<title>The Hixtory CHanges to commit</title>
+<title>The Hixtory</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="viewport" content="width=device-width" />
@@ -13,41 +13,64 @@
 <style type="text/css">
 <!-- 
 #music { 
-        position: absolute; top: 200px; left:  10%; 
-      	z-index:5; 
+        margin-top: -500px;
+        margin-left: 5%; 
+      	z-index:9999;
+      	position: relative; 
 }
 #clothing { 
-        position: absolute; top: 260px; left:  10%;
-      	z-index:5; 
+        margin-left: 5%;  
+      	z-index:9999;
+      	position: relative;  
+}
+#artists { 
+        margin-left: 5%;  
+      	z-index:9999;
+      	position: relative;  
 }
 
 
 #I { 
-        position: absolute; top:200px; right: 10%;
-      	z-index:5; 
+        margin-left: 91%; 
+        margin-top: -225px; 
+        z-index:9999;
+        position: relative;  
 }
 #II { 
-        position: absolute; top: 260px; right: 10%;
-      	z-index:5; 
+        margin-left: 91%; 
+        margin-top: 0%; 
+        z-index:9999;
+        position: relative;  
 }
 -->
 #III { 
-        position: absolute; top: 320px; right: 10%;
-      	z-index:5; 
+        margin-left: 91%; 
+        margin-top: 0%; 
+        z-index:9999;
+        position: relative; 
 }
 -->
 #IV { 
-        position: absolute; top: 380px; right: 10%;
-      	z-index:5; 
+        margin-left: 91%; 
+        margin-top: 0%; 
+        z-index:9999;
+        position: relative; 
 }
 #V { 
-        position: absolute; top: 440px; right: 10%;
-      	z-index:5; 
+        margin-left: 91%; 
+        margin-top: 0%; 
+        z-index:9999;
+        position: relative; 
 }
 
 html, body {
 	margin:0;
 	padding:0;
+}
+
+#page {
+	width: 1400px;
+	margin: 0 auto;
 }
 
 #parallax {
@@ -70,7 +93,7 @@ html, body {
 	margin-right:  20%;
 	margin-bottom: 20px;
 	top: 550px;
-	z-index: 9999;
+	z-index: 9990;
 }
 -->
 </style>
@@ -113,202 +136,210 @@ html, body {
 </head>
 <body>
 
-<div id="jquery_jplayer_1" class="cp-jplayer"></div>
-<div id="jquery_jplayer_2" class="cp-jplayer"></div>
-<div id="jquery_jplayer_3" class="cp-jplayer"></div>
-<div id="jquery_jplayer_4" class="cp-jplayer"></div>
-<div id="jquery_jplayer_5" class="cp-jplayer"></div>
+<div id="page">
 
-<div id="pl-wrapper">
-<div id="cp_container_1" class="cp-container">
-			
-				<div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
-					<div class="cp-buffer-1"></div>
-					<div class="cp-buffer-2"></div>
-					
+	<div id="jquery_jplayer_1" class="cp-jplayer"></div>
+	<div id="jquery_jplayer_2" class="cp-jplayer"></div>
+	<div id="jquery_jplayer_3" class="cp-jplayer"></div>
+	<div id="jquery_jplayer_4" class="cp-jplayer"></div>
+	<div id="jquery_jplayer_5" class="cp-jplayer"></div>
+
+	<div id="pl-wrapper">
+	<div id="cp_container_1" class="cp-container">
+				
+					<div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
+						<div class="cp-buffer-1"></div>
+						<div class="cp-buffer-2"></div>
+						
+					</div>
+					<div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
+						<div class="cp-progress-1"></div>
+						<div class="cp-progress-2"></div>
+					</div>
+					<div class="cp-circle-control"></div>
+					<ul class="cp-controls">
+						<li><a href="#" class="cp-play" tabindex="1">play</a></li>
+						<li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
+					</ul>
+				<br><br><br><p style="color:white; margin:0; text-align:center; font-size:1em; font-family: Times; letter-spacing: 0.1em; ">
+				MOHAWK<br></p>
+				<p style="color:white; margin:0; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
+				HICKUP<br></p>
+				<p style="text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
+			<a href="audio/001/track04.mp3" onmouseover="document.track01.src='buttons/itunes.png'" onmouseout="document.track01.src='buttons/download.png'">
+			<img src="./buttons/download.png" name="track01" alt="track01"></a>
+			<br></p>	
 				</div>
-				<div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
-					<div class="cp-progress-1"></div>
-					<div class="cp-progress-2"></div>
-				</div>
-				<div class="cp-circle-control"></div>
-				<ul class="cp-controls">
-					<li><a href="#" class="cp-play" tabindex="1">play</a></li>
-					<li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
-				</ul>
-			<br><br><br><p style="color:white; margin:0; text-align:center; font-size:1em; font-family: Times; letter-spacing: 0.1em; ">
-			MOHAWK<br></p>
-			<p style="color:white; margin:0; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
-			HICKUP<br></p>
-			<p style="text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
-		<a href="audio/001/track04.mp3" onmouseover="document.track01.src='buttons/itunes.png'" onmouseout="document.track01.src='buttons/download.png'">
-		<img src="./buttons/download.png" name="track01" alt="track01"></a>
-		<br></p>	
-			</div>
 
-<div id="cp_container_2" class="cp-container" >
+	<div id="cp_container_2" class="cp-container" >
 
-	<div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
-		<div class="cp-buffer-1"></div>
-		<div class="cp-buffer-2"></div>
-	</div>
-	<div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
-		<div class="cp-progress-1"></div>
-		<div class="cp-progress-2"></div>
-	</div>
-	<div class="cp-circle-control"></div>
-	<ul class="cp-controls">
-		<li><a href="#" class="cp-play" tabindex="1">play</a></li>
-		<li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
-	</ul>
-	<br><br><br>
-	<p style="color:white; margin:0; text-align: center; font-size:1em; letter-spacing: 0.1em; font-family: Times;">
-	ONE NIGHT OUT<br></p>
-	<p style="color:white; margin:0; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
-	ZOMBIE DISCO SQUAD<br></p>
+		<div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
+			<div class="cp-buffer-1"></div>
+			<div class="cp-buffer-2"></div>
+		</div>
+		<div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
+			<div class="cp-progress-1"></div>
+			<div class="cp-progress-2"></div>
+		</div>
+		<div class="cp-circle-control"></div>
+		<ul class="cp-controls">
+			<li><a href="#" class="cp-play" tabindex="1">play</a></li>
+			<li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
+		</ul>
+		<br><br><br>
+		<p style="color:white; margin:0; text-align: center; font-size:1em; letter-spacing: 0.1em; font-family: Times;">
+		ONE NIGHT OUT<br></p>
+		<p style="color:white; margin:0; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
+		ZOMBIE DISCO SQUAD<br></p>
+		<p style="color:white; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
+		<a href="audio/001/track04.mp3" onmouseover="document.track02.src='buttons/itunes.png'" onmouseout="document.track02.src='buttons/download.png'">
+		<img src="./buttons/download.png" name="track02" alt="track01"></a>
+		<br></p>
+		</div>
+
+
+	<div id="cp_container_3" class="cp-container" >
+
+		<div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
+			<div class="cp-buffer-1"></div>
+			<div class="cp-buffer-2"></div>
+		</div>
+		<div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
+			<div class="cp-progress-1"></div>
+			<div class="cp-progress-2"></div>
+		</div>
+		<div class="cp-circle-control"></div>
+		<ul class="cp-controls">
+			<li><a href="#" class="cp-play" tabindex="1">play</a></li>
+			<li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
+		</ul>
+		<br><br><br>
+		<p style="color:white; margin:0; text-align: center; font-size:1em; letter-spacing: 0.1em; font-family: Times;">
+		MOHAWK<br></p>
+		<p style="color:white; margin:0; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
+		ORIGINAL<br></p>
+
+	<p style="color:white;text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
+	<a href="audio/001/track04.mp3" onmouseover="document.track03.src='buttons/itunes.png'" onmouseout="document.track03.src='buttons/download.png'">
+	<img src="./buttons/download.png" name="track03" alt="track01"></a>
+	<br></p>	
+		</div>
+
+	<div id="cp_container_4" class="cp-container">
+
+		<div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
+			<div class="cp-buffer-1"></div>
+			<div class="cp-buffer-2"></div>
+		</div>
+		<div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
+			<div class="cp-progress-1"></div>
+			<div class="cp-progress-2"></div>
+		</div>
+		<div class="cp-circle-control"></div>
+		<ul class="cp-controls">
+			<li><a href="#" class="cp-play" tabindex="1">play</a></li>
+			<li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
+		</ul>
+		<br><br><br>
+		<p style="color:white; margin:0; text-align: center; font-size:1em; letter-spacing: 0.1em; font-family: Times;">
+		MOHAWK<br></p>
+		<p style="color:white; margin:0; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
+		ORIGINAL<br></p>
+
+		<p style="color:white; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
+		<a href="audio/001/track04.mp3" onmouseover="document.track04.src='buttons/free.png'" onmouseout="document.track04.src='buttons/download.png'">
+		<img src="./buttons/download.png" name="track04" alt="track04"></a>
+		<br></p>
+		</div>
+
+	<div id="cp_container_5" class="cp-container">
+
+		<div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
+			<div class="cp-buffer-1"></div>
+			<div class="cp-buffer-2"></div>
+		</div>
+		<div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
+			<div class="cp-progress-1"></div>
+			<div class="cp-progress-2"></div>
+		</div>
+		<div class="cp-circle-control"></div>
+		<ul class="cp-controls">
+			<li><a href="#" class="cp-play" tabindex="1">play</a></li>
+			<li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
+		</ul>
+		<br><br><br>
+		<p style="color:white; margin:0; text-align: center; font-size:1em; letter-spacing: 0.1em; font-family: Times;">
+		MOHAWK<br></p>
+		<p style="color:white; margin:0; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
+		ORIGINAL<br></p>
+
 	<p style="color:white; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
-	<a href="audio/001/track04.mp3" onmouseover="document.track02.src='buttons/itunes.png'" onmouseout="document.track02.src='buttons/download.png'">
-	<img src="./buttons/download.png" name="track02" alt="track01"></a>
+	<a href="audio/001/track04.mp3" onmouseover="document.track05.src='buttons/free.png'" onmouseout="document.track05.src='buttons/download.png'">
+	<img src="./buttons/download.png" name="track05" alt="track05"></a>
 	<br></p>
+		</div>
+
+	</div>
+
+	<div id="parallax">
+		<img src="001/images/bg.jpg" class="parallax-layer" alt="" style="width:1360px;height:900px;"/>
+		
+		<img src="001/images/moon.png" class="parallax-layer" alt="" style="width:1300px;height:800px;"/>
+
+		<img src="001/images/nebel.png" class="parallax-layer" alt="" style="width:1700px;height:850px;"/>
+
 	</div>
 
 
-<div id="cp_container_3" class="cp-container" >
-
-	<div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
-		<div class="cp-buffer-1"></div>
-		<div class="cp-buffer-2"></div>
-	</div>
-	<div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
-		<div class="cp-progress-1"></div>
-		<div class="cp-progress-2"></div>
-	</div>
-	<div class="cp-circle-control"></div>
-	<ul class="cp-controls">
-		<li><a href="#" class="cp-play" tabindex="1">play</a></li>
-		<li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
-	</ul>
-	<br><br><br>
-	<p style="color:white; margin:0; text-align: center; font-size:1em; letter-spacing: 0.1em; font-family: Times;">
-	MOHAWK<br></p>
-	<p style="color:white; margin:0; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
-	ORIGINAL<br></p>
-
-<p style="color:white;text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
-<a href="audio/001/track04.mp3" onmouseover="document.track03.src='buttons/itunes.png'" onmouseout="document.track03.src='buttons/download.png'">
-<img src="./buttons/download.png" name="track03" alt="track01"></a>
-<br></p>	
+	<div id="music">
+	<a href="001/index.html" onmouseover="document.music.src='buttons/music_over.png'" onmouseout="document.music.src='buttons/music.png'">
+	<img src="buttons/music.png" name="music" alt="music">
+	</a>
 	</div>
 
-<div id="cp_container_4" class="cp-container">
-
-	<div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
-		<div class="cp-buffer-1"></div>
-		<div class="cp-buffer-2"></div>
+	<div id="clothing">
+	<a href="http://thehixtory.bigcartel.com/category/collection-i" onmouseover="document.clothing.src='buttons/clothing_over.png'" onmouseout="document.clothing.src='buttons/clothing.png'">
+	<img src="buttons/clothing.png" name="clothing" alt="clothing">
+	</a>
 	</div>
-	<div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
-		<div class="cp-progress-1"></div>
-		<div class="cp-progress-2"></div>
-	</div>
-	<div class="cp-circle-control"></div>
-	<ul class="cp-controls">
-		<li><a href="#" class="cp-play" tabindex="1">play</a></li>
-		<li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
-	</ul>
-	<br><br><br>
-	<p style="color:white; margin:0; text-align: center; font-size:1em; letter-spacing: 0.1em; font-family: Times;">
-	MOHAWK<br></p>
-	<p style="color:white; margin:0; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
-	ORIGINAL<br></p>
-
-	<p style="color:white; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
-	<a href="audio/001/track04.mp3" onmouseover="document.track04.src='buttons/free.png'" onmouseout="document.track04.src='buttons/download.png'">
-	<img src="./buttons/download.png" name="track04" alt="track04"></a>
-	<br></p>
-	</div>
-
-<div id="cp_container_5" class="cp-container">
-
-	<div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
-		<div class="cp-buffer-1"></div>
-		<div class="cp-buffer-2"></div>
-	</div>
-	<div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
-		<div class="cp-progress-1"></div>
-		<div class="cp-progress-2"></div>
-	</div>
-	<div class="cp-circle-control"></div>
-	<ul class="cp-controls">
-		<li><a href="#" class="cp-play" tabindex="1">play</a></li>
-		<li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
-	</ul>
-	<br><br><br>
-	<p style="color:white; margin:0; text-align: center; font-size:1em; letter-spacing: 0.1em; font-family: Times;">
-	MOHAWK<br></p>
-	<p style="color:white; margin:0; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
-	ORIGINAL<br></p>
-
-<p style="color:white; text-align: center; letter-spacing: 0.3em; font-size:0.6em; font-family: Times;">
-<a href="audio/001/track04.mp3" onmouseover="document.track05.src='buttons/free.png'" onmouseout="document.track05.src='buttons/download.png'">
-<img src="./buttons/download.png" name="track05" alt="track05"></a>
-<br></p>
-	</div>
-
-</div>
-
-<div id="parallax">
-	<img src="001/images/bg.jpg" class="parallax-layer" alt="" style="width:1360px;height:900px;"/>
 	
-	<img src="001/images/moon.png" class="parallax-layer" alt="" style="width:1300px;height:800px;"/>
+	<div id="artists">
+	<a href="http://thehixtory.bigcartel.com/category/collection-i" onmouseover="document.clothing.src='buttons/clothing_over.png'" onmouseout="document.clothing.src='buttons/clothing.png'">
+	<img src="buttons/clothing.png" name="clothing" alt="clothing">
+	</a>
+	</div>
 
-	<img src="001/images/nebel.png" class="parallax-layer" alt="" style="width:1700px;height:850px;"/>
+	<div id="I">
+	<a href="/001/index.html">
+	<img src="buttons/III.png">
+	</a>
+	</div>
+
+	<div id="II">
+		<a href="/001/index.html">
+		<img src="buttons/III.png">
+		</a>
+		</div>
+	
+		<div id="III">
+		<a href="/001/index.html">
+		<img src="buttons/III.png">
+		</a>
+		</div>
+	
+		<div id="IV">
+		<a href="/001/index.html">
+		<img src="buttons/III.png">
+		</a>
+		</div>
+	
+		<div id="V">
+		<a href="/001/index.html">
+		<img src="buttons/III.png">
+		</a>
+		</div>
 
 </div>
-
-
-<div id="music">
-<a href="001/index.html" onmouseover="document.music.src='buttons/music_over.png'" onmouseout="document.music.src='buttons/music.png'">
-<img src="buttons/music.png" name="music" alt="music">
-</a>
-</div>
-
-<div id="clothing">
-<a href="http://thehixtory.bigcartel.com/category/collection-i" onmouseover="document.clothing.src='buttons/clothing_over.png'" onmouseout="document.clothing.src='buttons/clothing.png'">
-<img src="buttons/clothing.png" name="clothing" alt="clothing">
-</a>
-</div>
-
-<div id="I">
-<a href="/001/index.html">
-<img src="buttons/III.png">
-</a>
-</div>
-
-<div id="II">
-<a href="/001/index.html">
-<img src="buttons/III.png">
-</a>
-</div>
-
-<div id="III">
-<a href="/001/index.html">
-<img src="buttons/III.png">
-</a>
-</div>
-
-<div id="IV">
-<a href="/001/index.html">
-<img src="buttons/III.png">
-</a>
-</div>
-
-<div id="V">
-<a href="/001/index.html">
-<img src="buttons/III.png">
-</a>
-</div>
-
-
 
 </body>
 
